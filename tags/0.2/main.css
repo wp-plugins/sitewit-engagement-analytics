@@ -1,0 +1,17 @@
+.step{
+	width:700px;
+	height:70px;
+	background: url('plugin-status.png');
+}
+
+.step1{
+	background-position: 0 0;
+}
+
+.step2{
+	background-position: 0 140px;
+}
+
+.step3{
+	background-position: 0 70px;
+}
