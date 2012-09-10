@@ -1,4 +1,4 @@
-=== SiteWit for WordPress ===
+=== SiteWit Engagement Analytics ===
 Contributors: SiteWit
 Donate link:
 Tags: analytics, analytic, metrics, engagement
