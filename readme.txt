@@ -44,7 +44,7 @@ a Brain for your Ads
 a Brain for your Bids
 * Evolutionary optimization algorithms maximize engagement and conversions
 * Keywords are automatically bid daily to squeeze the most out of your budget
-* In order to do this you would need a Ph.D. from MIT and spend a year crunching numbers...we do it daily for all campaigns.A few notes about the sections above:*   
+* In order to do this you would need a Ph.D. from MIT and spend a year crunching numbers...we do it daily for all campaigns.  
 
 
 == Installation ==
