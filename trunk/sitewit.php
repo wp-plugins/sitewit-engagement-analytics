@@ -8,7 +8,7 @@
 Plugin Name: SiteWit
 Plugin URI: http://www.sitewit.com
 Description: SiteWit is the most advanced Pay Per Click (PPC) management software for your search engine marketing efforts. To get started: 1) Click the "Activate" link to the left of this description, 2) <a href="http://www.sitewit.com/Signup.asp">Sign up for a FREE SiteWit account</a>, and 3) Go to your <a href="plugins.php?page=sitewit-config">SiteWit configuration page</a>, and save your SiteWit tokens.
-Version: 0.1
+Version: 0.2
 Author: SiteWit
 Author URI: http://www.sitewit.com
 */
