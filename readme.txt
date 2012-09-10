@@ -4,7 +4,7 @@ Donate link:
 Tags: analytics, analytic, metrics, engagement
 Requires at least: 3.0
 Tested up to: 3.4.1
-Stable tag: 0.1
+Stable tag: 0.2
 License: GPLv2 or later
 
 The SiteWit for WordPress plugin was designed for users to easily install the SiteWit Engagement Analytics tracking code onto their website.
@@ -90,6 +90,9 @@ No. You can use our engagement metrics without the need of a paid search campaig
 
 
 == Changelog ==
+
+= 0.2 =
+* Revisions made
 
 = 0.1 =
 * Initial Public Release
