@@ -1,61 +1,31 @@
 === SiteWit Engagement Analytics ===
 Contributors: SiteWit
 Donate link:
-Tags: analytics, analytic, metrics, engagement
+Tags: analytics, analytic, metrics, engagement, marketing, SEM, SEO, search engine optimization, advertising
 Requires at least: 3.0
 Tested up to: 3.4.1
-Stable tag: 0.2
+Stable tag: 0.3
 License: GPLv2 or later
 
-The SiteWit for WordPress plugin was designed for users to easily install the SiteWit Engagement Analytics tracking code onto their website.
+The SiteWit Engagement Analytics plugin was designed for users to easily install the SiteWit Engagement Analytics tracking code onto their website, as well as integrate their WordPress site with SiteWit.
 
 
 == Description ==
 
-a Brain for your Website
-* How do your landing pages engage your website visitors
-* What landing pages are working great
-* What landing pages need work
-* What pages are hidden gems that you should work on
-
-a Brain for your Visitors
-* See how many visitors become
-    * Repeat
-    * Researchers
-    * Prospects
-    * Fans
-* Understand your visitors through ALL their visits not just their last
-
-a Brain for your Marketing
-* Automatically maximize the impact of your marketing budget
-* Optimize keywords and ads effortlessly
-* Improve your website content and landing pages
-
-a Brain for your Keywords
-* Discover relevant keywords for your website
-* Identify what keywords are engaging visitors
-* Automatically discover keywords that are wasting your time and marketing efforts
-
-a Brain for your Ads
-* Discover what pages have good content that should be marketed online
-* SiteWit builds relevant ads you can easily modify saving you tons of time
-* Automatically A/B test your ads and messaging, discovering what is driving visitor engagement
-
-a Brain for your Bids
-* Evolutionary optimization algorithms maximize engagement and conversions
-* Keywords are automatically bid daily to squeeze the most out of your budget
-* In order to do this you would need a Ph.D. from MIT and spend a year crunching numbers...we do it daily for all campaigns.  
+SiteWit Engagement Analytics is a brain for your website that informs, automates and optimizes online marketing efforts through visitor engagement. It gives insight as to how your website and landing pages are engaging your visitors and it allows you to easily build SEM campaigns and optimize around engagement.
 
 
 == Installation ==
 
-Option 1 - Usg the WordPress Admin Console
+Option 1 - Using the WordPress Admin Console (Recommended)
+
 1. Go to the plugins section of your WordPress Admin Console, and click on 'add new'.
 2. Search for "SiteWit" and click then 'install' to install the plugin.
 3. Look for SiteWit in the Plugins section of your WordPress admin. Click on SiteWit to integrate with your SiteWit account.
 4. When you see the sign-up page, click 'existing account' link and log in. Finally, click Link my SiteWit Account and you're all set.
 
 Option 2 - Manually through FTP
+
 1. Download the Plugin From This Page
 2. Delete any existing SiteWit folders from the '/wp-content/plugins/' directory
 3. Upload the SiteWit folder to the '/wp-content/plugins/' directory
@@ -90,6 +60,9 @@ No. You can use our engagement metrics without the need of a paid search campaig
 
 
 == Changelog ==
+
+= 0.3 =
+* UI changes and fixes
 
 = 0.2 =
 * Revisions made
