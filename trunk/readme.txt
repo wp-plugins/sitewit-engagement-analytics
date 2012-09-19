@@ -7,7 +7,7 @@ Tested up to: 3.4.1
 Stable tag: 0.3
 License: GPLv2 or later
 
-The SiteWit Engagement Analytics plugin was designed for users to easily install the SiteWit Engagement Analytics tracking code onto their website, as well as integrate their WordPress site with SiteWit.
+Go beyond traditional analytics. Understand how your website is engaging your visitors and build SEM campaigns that optimize around engagement.
 
 
 == Description ==
