@@ -8,7 +8,7 @@
 Plugin Name: SiteWit
 Plugin URI: http://www.sitewit.com
 Description: SiteWit Engagement Analytics is a brain for your website that informs, automates and optimizes online marketing efforts through visitor engagement. It gives insight as to how your website and landing pages are engaging your visitors and it allows you to easily build SEM campaigns and optimize around engagement.
-Version: 0.3
+Version: 0.3.1
 Author: SiteWit
 Author URI: http://www.sitewit.com
 */
