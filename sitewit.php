@@ -5,10 +5,10 @@
  */
 
 /*
-Plugin Name: SiteWit
+Plugin Name: SiteWit Website Analytics and Search Engine Marketing
 Plugin URI: http://www.sitewit.com
-Description: SiteWit Engagement Analytics is a brain for your website that informs, automates and optimizes online marketing efforts through visitor engagement. It gives insight as to how your website and landing pages are engaging your visitors and it allows you to easily build SEM campaigns and optimize around engagement.
-Version: 0.4
+Description: SiteWit is a DIY online marketing platform. Start with FREE website analytics and SEO keyword ranking. Then utilize SiteWit’s step by step set up to launch search campaigns across Google, Bing and Yahoo. Maximize your search budgets and advertise online with confidence by leveraging SiteWit’s automated management and optimization tools.
+Version: 0.5
 Author: SiteWit
 Author URI: http://www.sitewit.com
 */

@@ -1,18 +1,18 @@
-=== SiteWit Engagement Analytics ===
+=== SiteWit Website Analytics and Search Engine Marketing ===
 Contributors: SiteWit
 Donate link:
-Tags: analytics, analytic, metrics, engagement, marketing, SEM, SEO, search engine optimization, advertising
+Tags: advertising, online advertising, online  marketing, SEM, SEO, search engine marketing, search engine optimization, PPC marketing, analytics, website analytics, website metrics 
 Requires at least: 3.0
 Tested up to: 3.4.1
-Stable tag: 0.4
+Stable tag: 0.5
 License: GPLv2 or later
 
-The SiteWit Engagement Analytics plugin was designed for users to easily install the SiteWit Engagement Analytics tracking code onto their website, as well as integrate their WordPress site with SiteWit.
+SiteWit is a DIY online marketing platform for SMBs. Get free analytics for your website and launch/optimize search campaigns on Google & Bing/Yahoo.
 
 
 == Description ==
 
-SiteWit Engagement Analytics is a brain for your website that informs, automates and optimizes online marketing efforts through visitor engagement. It gives insight as to how your website and landing pages are engaging your visitors and it allows you to easily build SEM campaigns and optimize around engagement.
+SiteWit is a DIY online marketing platform. Start with FREE website analytics and SEO keyword ranking. Then utilize SiteWit’s step by step set up to launch search campaigns across Google, Bing and Yahoo. Maximize your search budgets and advertise online with confidence by leveraging SiteWit’s automated management and optimization tools.
 
 
 == Installation ==
@@ -60,6 +60,12 @@ No. You can use our engagement metrics without the need of a paid search campaig
 
 
 == Changelog ==
+
+= 0.5 =
+* Messaging changes
+
+= 0.4 =
+* UI changes and fixes
 
 = 0.3 =
 * UI changes and fixes
