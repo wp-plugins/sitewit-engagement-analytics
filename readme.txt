@@ -1,10 +1,10 @@
 === SiteWit Website Analytics and Search Engine Marketing ===
-Contributors: SiteWit
+Contributors: sitewit
 Donate link:
 Tags: advertising, online advertising, online  marketing, SEM, SEO, search engine marketing, search engine optimization, PPC marketing, analytics, website analytics, website metrics 
 Requires at least: 3.0
 Tested up to: 3.4.1
-Stable tag: 0.5
+Stable tag: 0.6
 License: GPLv2 or later
 
 SiteWit is a DIY online marketing platform for SMBs. Get free analytics for your website and launch/optimize search campaigns on Google & Bing/Yahoo.
