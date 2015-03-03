@@ -1,18 +1,19 @@
 === SiteWit Website Analytics and Search Engine Marketing ===
 Contributors: sitewit
 Donate link:
-Tags: advertising, online advertising, online  marketing, SEM, SEO, search engine marketing, search engine optimization, PPC marketing, analytics, website analytics, website metrics 
-Requires at least: 3.0
-Tested up to: 3.4.1
-Stable tag: 0.6
+Tags: advertising, online advertising, online  marketing, SEM, SEO, search engine marketing, search engine optimization, PPC marketing, analytics, website analytics, website metrics
+Requires at least: 3.8
+Tested up to: 4.1
+Stable tag: 2.0.0
 License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-SiteWit is a DIY online marketing platform for SMBs. Get free analytics for your website and launch/optimize search campaigns on Google & Bing/Yahoo.
+SiteWit is a DIY online marketing platform for SMBs. Get free analytics for your website and launch/optimize search campaigns on Google and Bing.
 
 
 == Description ==
 
-SiteWit is a DIY online marketing platform. Start with FREE website analytics and SEO keyword ranking. Then utilize SiteWit’s step by step set up to launch search campaigns across Google, Bing and Yahoo. Maximize your search budgets and advertise online with confidence by leveraging SiteWit’s automated management and optimization tools.
+SiteWit is a DIY online marketing platform. Start with FREE website analytics and SEO keyword ranking. Then utilize SiteWit's step by step set up to launch search campaigns across Google, Bing and Yahoo. Maximize your search budgets and advertise online with confidence by leveraging SiteWit's automated management and optimization tools.
 
 
 == Installation ==
@@ -21,17 +22,18 @@ Option 1 - Using the WordPress Admin Console (Recommended)
 
 1. Go to the plugins section of your WordPress Admin Console, and click on 'add new'.
 2. Search for "SiteWit" and click then 'install' to install the plugin.
-3. Look for SiteWit in the Plugins section of your WordPress admin. Click on SiteWit to integrate with your SiteWit account.
-4. When you see the sign-up page, click 'existing account' link and log in. Finally, click Link my SiteWit Account and you're all set.
+3. Activate the plugin and navigate to Settings > Sitewit sub-menu.
+4. If you don't have an account with SiteWit, you can create one easily and your WordPress site will be linked automatically to the account.
+5. If you already have an account with SiteWit, you can login and link you account to the WordPress site.
 
 Option 2 - Manually through FTP
 
 1. Download the Plugin From This Page
 2. Delete any existing SiteWit folders from the '/wp-content/plugins/' directory
 3. Upload the SiteWit folder to the '/wp-content/plugins/' directory
-4. Activate the plugin through the 'Plugins' menu in WordPress
-5. Look for SiteWit in the Plugins section of your WordPress admin. Click on SiteWit to integrate with your SiteWit account.
-6. When you see the sign-up page, click 'existing account' link and log in. Finally, click Link my SiteWit Account and you're all set.
+4. Activate the plugin and navigate to Settings > Sitewit sub-menu.
+5. If you don't have an account with SiteWit, you can create one easily and your WordPress site will be linked automatically to the account.
+6. If you already have an account with SiteWit, you can login and link you account to the WordPress site.
 
 
 == Frequently Asked Questions ==
@@ -55,11 +57,16 @@ No. You can use our engagement metrics without the need of a paid search campaig
 
 == Screenshots ==
 
-1. Look for SiteWit in the Plugins section of your WordPress admin. Click on 'SiteWit' to integrate with your SiteWit account.
-2. When you see the sign-up page, click 'existing account' link and log in. Finally, click 'Link my SiteWit Account' and you're all set.
+1. Activate the plugin and look for SiteWit sub-menu in the Settings section of your WordPress admin.
+2. You can create a new account or log in with an existing account, then link your WordPress site.
+3. Plugin Dashboard allows you to quickly navigate to different types of reports for your website.
 
 
 == Changelog ==
+
+= 2.0 =
+* Major release. Revamp the entire plugin to work smoothly with latest WordPress verison (4.1.x).
+* Better code organization.
 
 = 0.5 =
 * Messaging changes
@@ -75,3 +82,10 @@ No. You can use our engagement metrics without the need of a paid search campaig
 
 = 0.1 =
 * Initial Public Release
+
+
+== Upgrade Notice ==
+
+= 2.0 =
+* This version require PHP version 5.3 or later
+* For API access, it also needs PHP cURL extension. Please contact your hosting provider to enable the extension.
