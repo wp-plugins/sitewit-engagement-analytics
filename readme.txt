@@ -4,7 +4,7 @@ Donate link:
 Tags: advertising, online advertising, online  marketing, SEM, SEO, search engine marketing, search engine optimization, PPC marketing, analytics, website analytics, website metrics
 Requires at least: 3.8
 Tested up to: 4.1
-Stable tag: 2.0.0
+Stable tag: 2.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -22,7 +22,7 @@ Option 1 - Using the WordPress Admin Console (Recommended)
 
 1. Go to the plugins section of your WordPress Admin Console, and click on 'add new'.
 2. Search for "SiteWit" and click then 'install' to install the plugin.
-3. Activate the plugin and navigate to Settings > Sitewit sub-menu.
+3. Activate the plugin and navigate to Settings > SiteWit sub-menu.
 4. If you don't have an account with SiteWit, you can create one easily and your WordPress site will be linked automatically to the account.
 5. If you already have an account with SiteWit, you can login and link you account to the WordPress site.
 
@@ -31,7 +31,7 @@ Option 2 - Manually through FTP
 1. Download the Plugin From This Page
 2. Delete any existing SiteWit folders from the '/wp-content/plugins/' directory
 3. Upload the SiteWit folder to the '/wp-content/plugins/' directory
-4. Activate the plugin and navigate to Settings > Sitewit sub-menu.
+4. Activate the plugin and navigate to Settings > SiteWit sub-menu.
 5. If you don't have an account with SiteWit, you can create one easily and your WordPress site will be linked automatically to the account.
 6. If you already have an account with SiteWit, you can login and link you account to the WordPress site.
 
@@ -64,7 +64,10 @@ No. You can use our engagement metrics without the need of a paid search campaig
 
 == Changelog ==
 
-= 2.0 =
+= 2.0.1 =
+* Fix a tiny notice message on Settings page
+
+= 2.0.0 =
 * Major release. Revamp the entire plugin to work smoothly with latest WordPress verison (4.1.x).
 * Better code organization.
 

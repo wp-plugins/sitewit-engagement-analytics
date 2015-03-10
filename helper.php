@@ -17,7 +17,7 @@ function sw_no_tracking_code() {
 function sw_is_setting_page() {
 	global $pagenow;
 
-	return ( $pagenow === 'options-general.php' && $_REQUEST['page'] === SW_SETTING_PAGE );
+	return ( $pagenow === 'options-general.php' && isset($_REQUEST['page']) && $_REQUEST['page'] === SW_SETTING_PAGE );
 }
 
 function sw_get_setting_page_link( $absolute = false ) {
