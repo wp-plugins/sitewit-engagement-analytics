@@ -117,13 +117,13 @@
 
 		// Make ajax request, expecting JSON response. "ajaxurl" is a global JS variable from WordPress
 		jQuery.post(ajaxurl, data, function(response) {
-			if (response === -1 || response === null) {
+			if (response === -1 || response === null || response.error !== "") {
+				linkButton.text("<?php _e('Linking Failed'); ?>");
 				alert("<?php _e('Request failed, please try again!'); ?>");
 			} else {
 				linkButton.text("<?php _e('Success! Redirecting...'); ?>");
-				// Refresh the page and user will be presented with the setting page
-				location.reload();
 			}
+			location.reload();
 		}, "json");
 	}
 

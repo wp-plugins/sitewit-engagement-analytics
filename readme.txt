@@ -4,7 +4,7 @@ Donate link:
 Tags: advertising, online advertising, online  marketing, SEM, SEO, search engine marketing, search engine optimization, PPC marketing, analytics, website analytics, website metrics
 Requires at least: 3.8
 Tested up to: 4.1
-Stable tag: 2.0.1
+Stable tag: 2.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -18,7 +18,7 @@ SiteWit is a DIY online marketing platform. Start with FREE website analytics an
 
 == Installation ==
 
-Option 1 - Using the WordPress Admin Console (Recommended)
+= Option 1 - Using the WordPress Admin Console (Recommended) =
 
 1. Go to the plugins section of your WordPress Admin Console, and click on 'add new'.
 2. Search for "SiteWit" and click then 'install' to install the plugin.
@@ -26,7 +26,7 @@ Option 1 - Using the WordPress Admin Console (Recommended)
 4. If you don't have an account with SiteWit, you can create one easily and your WordPress site will be linked automatically to the account.
 5. If you already have an account with SiteWit, you can login and link you account to the WordPress site.
 
-Option 2 - Manually through FTP
+= Option 2 - Manually through FTP =
 
 1. Download the Plugin From This Page
 2. Delete any existing SiteWit folders from the '/wp-content/plugins/' directory
@@ -64,27 +64,15 @@ No. You can use our engagement metrics without the need of a paid search campaig
 
 == Changelog ==
 
+= 2.0.2 =
+* Better handling of account linking error
+
 = 2.0.1 =
 * Fix a tiny notice message on Settings page
 
 = 2.0.0 =
 * Major release. Revamp the entire plugin to work smoothly with latest WordPress verison (4.1.x).
 * Better code organization.
-
-= 0.5 =
-* Messaging changes
-
-= 0.4 =
-* UI changes and fixes
-
-= 0.3 =
-* UI changes and fixes
-
-= 0.2 =
-* Revisions made
-
-= 0.1 =
-* Initial Public Release
 
 
 == Upgrade Notice ==
