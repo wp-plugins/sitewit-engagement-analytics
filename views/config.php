@@ -49,12 +49,14 @@
 		return host1 === host2;
 	}
 
-	function receiveTokens() {
+	function receiveTokens(event) {
+		var oriEvent = event.originalEvent;
+
 		// Don't do anything if the message not come from SiteWit
-		if ( ! sameOrigin(event.origin, swHost)) return;
+		if ( ! sameOrigin(oriEvent.origin, swHost)) return;
 
 		// Process the data received
-		var data = jQuery.parseJSON(event.data);
+		var data = jQuery.parseJSON(oriEvent.data);
 		jQuery.each(data, function(i, item) {
 			switch (item.mType) {
 				case "wh": // window height

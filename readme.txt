@@ -4,7 +4,7 @@ Donate link:
 Tags: advertising, online advertising, online  marketing, SEM, SEO, search engine marketing, search engine optimization, PPC marketing, analytics, website analytics, website metrics
 Requires at least: 3.8
 Tested up to: 4.1
-Stable tag: 2.0.2
+Stable tag: 2.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -63,6 +63,11 @@ No. You can use our engagement metrics without the need of a paid search campaig
 
 
 == Changelog ==
+
+= 2.0.3 =
+* Fix error when trying to activate the plugin on a PHP 5.2 (unsupported) host
+* Fix signup/login form not showing properly on Firefox browser
+* Match style on IE 8
 
 = 2.0.2 =
 * Better handling of account linking error
