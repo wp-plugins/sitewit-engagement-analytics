@@ -8,13 +8,6 @@ class SW_Plugin
 {
 	private static $instance = null;
 
-	/** @var Messages */
-	private $messenger;
-
-	function __construct() {
-		$this->messenger = Messages::get_instance();
-	}
-
 	public static function get_instance() {
 		if ( ! self::$instance ) {
 			self::$instance = new SW_Plugin;
@@ -33,8 +26,9 @@ class SW_Plugin
 		// Add a settings menu to settings/config page of the plugin
 		add_action( 'admin_menu', function() {
 			// The last argument is the class + function where the page will be rendered
+			// The class must be declared as full namespaced as it's under 2 closure
 			add_options_page( __('SiteWit Configuration', SW_TEXT_DOMAIN), __('SiteWit', SW_TEXT_DOMAIN),
-				'manage_options', SW_SETTING_PAGE, array( $this, 'config_page' ) );
+				'manage_options', SW_SETTING_PAGE, array( '\Sitewit\WpPlugin\SW_Plugin', 'config_page' ) );
 		} );
 
 		// Load assets for admin setting page(s)
@@ -46,7 +40,7 @@ class SW_Plugin
 		if ( ( sw_no_token() || sw_no_tracking_code() ) && sw_is_setting_page() ) {
 			// Show notice
 			add_action( 'admin_notices', function() {
-				echo $this->messenger->add_warning(
+				echo Messages::add_warning(
 					__('<strong>SiteWit is almost ready.</strong> You must <a href="%s">link your SiteWit account</a> in order for it to work.'),
 					sw_get_setting_page_link()
 				);
@@ -85,12 +79,13 @@ TRACKINGCODE;
 	 * - When the account is setup properly, it shows the user with a set of icons to quickly navigate to SiteWit reports.
 	 */
 	public function config_page() {
-		add_action( 'admin_notices', 'my_admin_notice' );
+		// Get SW_Plugin instance because this function might get called from closure and not really have access to $this
+		$inc = \Sitewit\WpPlugin\SW_Plugin::get_instance();
 
 		// Include the correct view files
 		if ( false !== get_option( SW_OPTION_NAME_API_TOKEN ) && false !== get_option( SW_OPTION_NAME_USER_TOKEN ) ) {
 			// Has the tokens, so show the Settings page
-			$this->view( 'settings' );
+			$inc->view( 'settings' );
 		} else {
 			$current_user = wp_get_current_user();
 
@@ -103,7 +98,7 @@ TRACKINGCODE;
 
  			);
 
-			$this->view( 'config', $args );
+			$inc->view( 'config', $args );
 		}
 	}
 

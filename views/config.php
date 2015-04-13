@@ -24,7 +24,7 @@
 
 	<div class="sw-note sw-login-info sw-default-hide">
 		<ul>
-			<li><?php _e('If this is not the account you wanted, please navigate to <a target="_blank" href="http://login.sitewit.com">http://login.sitewit.com</a> to log out.') ?></li>
+			<li><?php _e('If this is not the account you wanted, please navigate to <a target="_blank" href="https://login.sitewit.com">https://login.sitewit.com</a> to log out.') ?></li>
 		</ul>
 	</div>
 
