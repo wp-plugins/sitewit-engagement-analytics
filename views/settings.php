@@ -57,8 +57,8 @@
 					if (response === -1 || response === null) {
 						alert("<?php _e('Request failed, please try again!'); ?>");
 					} else {
-						// Refresh the page and user will be presented with the config page
-						location.reload();
+						// Refresh the page (with no cache) and user will be presented with the config page
+						location.reload(true);
 					}
 				}, "json");
 			}

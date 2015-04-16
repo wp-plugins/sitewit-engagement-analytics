@@ -94,8 +94,7 @@ TRACKINGCODE;
 													. '&u=' . urlencode(home_url())                     // site url
 													. '&n=' . urlencode($current_user->display_name)    // name
 													. '&e=' . urlencode($current_user->user_email),     // email
-				'sw_login_url' => SW_HOST . 'plugins/wordpress/Default.aspx'
-
+				'sw_login_url' => SW_HOST . 'plugins/wordpress/Default.aspx?login=true'
  			);
 
 			$inc->view( 'config', $args );
