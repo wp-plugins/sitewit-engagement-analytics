@@ -1,10 +1,10 @@
-=== SiteWit Website Analytics and Search Engine Marketing ===
+=== Search Engine Marketing ===
 Contributors: sitewit
 Donate link:
 Tags: advertising, online advertising, online  marketing, SEM, SEO, search engine marketing, search engine optimization, PPC marketing, analytics, website analytics, website metrics
 Requires at least: 3.8
-Tested up to: 4.1
-Stable tag: 2.0.5
+Tested up to: 4.2
+Stable tag: 2.0.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 

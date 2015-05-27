@@ -1,10 +1,10 @@
 <?php
 
 /*
-Plugin Name: SiteWit Website Analytics and Search Engine Marketing
+Plugin Name: Search Engine Marketing
 Plugin URI: http://www.sitewit.com
 Description: SiteWit is a DIY online marketing platform. Start with FREE website analytics and SEO keyword ranking.
-Version: 2.0.5
+Version: 2.0.6
 Author: SiteWit
 Author URI: http://www.sitewit.com
 Text Domain: sitewit-engagement-analytics
