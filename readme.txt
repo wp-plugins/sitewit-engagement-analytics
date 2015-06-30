@@ -64,6 +64,9 @@ No. You can use our engagement metrics without the need of a paid search campaig
 
 == Changelog ==
 
+= 2.0.6 =
+* Rename the plugin (only the display name)
+
 = 2.0.5 =
 * Have a nice touch to force reload the page for resetting account
 
