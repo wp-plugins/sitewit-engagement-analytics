@@ -2,10 +2,9 @@
 # This file is distributed under the GPLv2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: SiteWit Website Analytics and Search Engine Marketing "
-"2.0.0\n"
+"Project-Id-Version: Search Engine Marketing #VERSION#\n"
 "Report-Msgid-Bugs-To: http://www.sitewit.com/contact/\n"
-"POT-Creation-Date: 2015-03-03 03:02:51+00:00\n"
+"POT-Creation-Date: 2015-06-12 21:15:31+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -24,7 +23,7 @@ msgstr ""
 "\n"
 "X-Textdomain-Support: yes\n"
 
-#: releases/tmp/class/class-sw-plugin.php:36 src/class/class-sw-plugin.php:36
+#: releases/tmp/class/class-sw-plugin.php:30 src/class/class-sw-plugin.php:30
 msgid "SiteWit Configuration"
 msgstr ""
 
@@ -32,32 +31,27 @@ msgstr ""
 msgid "SiteWit"
 msgstr ""
 
-#: releases/tmp/class/class-sw-plugin.php:50 src/class/class-sw-plugin.php:50
+#: releases/tmp/class/class-sw-plugin.php:44 src/class/class-sw-plugin.php:44
 msgid ""
 "<strong>SiteWit is almost ready.</strong> You must <a href=\"%s\">link your "
 "SiteWit account</a> in order for it to work."
 msgstr ""
 
-#: releases/tmp/sitewit.php:50 src/sitewit.php:50
-msgid ""
-"This plugin requires PHP version 5.3 and later! Version 5.4.0 and over is "
-"recommended as 5.3 also reached EOL on 14 Aug 2014."
-msgstr ""
-
-#: releases/tmp/sitewit.php:55 src/sitewit.php:55
+#: releases/tmp/sitewit.php:48 src/sitewit.php:48
 msgid ""
 "This plugin requires cURL PHP extension to be enabled. Please contact your "
 "hosting provider to enable it."
 msgstr ""
 
-#: releases/tmp/sitewit.php:66 src/sitewit.php:66
+#: releases/tmp/sitewit.php:59 src/sitewit.php:59
 msgid ""
 "This site seems to already have tracking code injected by cPanel. Please go "
 "to cPanel for SiteWit Reports."
 msgstr ""
 
-#: releases/tmp/views/config.php:4 src/views/config.php:4
-msgid "Link to SiteWit account"
+#: releases/tmp/views/config.php:4 releases/tmp/views/config.php:83
+#: src/views/config.php:4 src/views/config.php:83
+msgid "Get your SiteWit account"
 msgstr ""
 
 #: releases/tmp/views/config.php:13 src/views/config.php:13
@@ -78,7 +72,7 @@ msgstr ""
 msgid ""
 "If this is not the account you wanted, please navigate to <a "
 "target=\"_blank\" "
-"href=\"http://login.sitewit.com\">http://login.sitewit.com</a> to log out."
+"href=\"https://login.sitewit.com\">https://login.sitewit.com</a> to log out."
 msgstr ""
 
 #: releases/tmp/views/config.php:33 src/views/config.php:33
@@ -87,16 +81,24 @@ msgid ""
 "us."
 msgstr ""
 
-#: releases/tmp/views/config.php:108 src/views/config.php:108
+#: releases/tmp/views/config.php:72 src/views/config.php:72
+msgid "Link to your SiteWit account"
+msgstr ""
+
+#: releases/tmp/views/config.php:118 src/views/config.php:118
 msgid "Linking account..."
 msgstr ""
 
-#: releases/tmp/views/config.php:121 releases/tmp/views/settings.php:58
-#: src/views/config.php:121 src/views/settings.php:58
+#: releases/tmp/views/config.php:131 src/views/config.php:131
+msgid "Linking Failed"
+msgstr ""
+
+#: releases/tmp/views/config.php:132 releases/tmp/views/settings.php:58
+#: src/views/config.php:132 src/views/settings.php:58
 msgid "Request failed, please try again!"
 msgstr ""
 
-#: releases/tmp/views/config.php:123 src/views/config.php:123
+#: releases/tmp/views/config.php:134 src/views/config.php:134
 msgid "Success! Redirecting..."
 msgstr ""
 
@@ -135,7 +137,7 @@ msgid "Are you sure you want to re-link? Current information will be lost!"
 msgstr ""
 
 #. Plugin Name of the plugin/theme
-msgid "SiteWit Website Analytics and Search Engine Marketing"
+msgid "Search Engine Marketing"
 msgstr ""
 
 #. Author URI of the plugin/theme

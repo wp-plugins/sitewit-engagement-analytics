@@ -1,10 +1,10 @@
 <?php defined('ABSPATH') or die("No script kiddies please!"); ?>
 
-<div class="wrap sw-config-page">
-	<h2><?php _e('Link to SiteWit account'); ?></h2>
+<div class="wrap sw-config-page" id="sw-config-page">
+	<h2><?php _e('Get your SiteWit account'); ?></h2>
 	<iframe id="sw-frame" scrolling="no" width="500" seamless="seamless" src="<?php echo $data['sw_signup_url']; ?>"></iframe>
 
-	<div class="sw-link-account" style="display: none;">
+	<div class="sw-link-account" id="sw-link-account" style="display: none;">
 		<input type="hidden" id="api-token" name="apiToken" value="" />
 		<input type="hidden" id="user-token" name="userToken" value="" />
 
@@ -15,20 +15,20 @@
 		</div>
 	</div>
 
-	<div class="sw-note sw-signup-info sw-default-hide">
+	<div class="sw-note sw-default-hide" id="sw-signup-info">
 		<ul>
 			<li><?php _e('We are using the information from currently logged in WordPress user to fill out the form. Please feel free to make changes.') ?></li>
 			<li><?php _e('Please provide a secured password for your account') ?></li>
 		</ul>
 	</div>
 
-	<div class="sw-note sw-login-info sw-default-hide">
+	<div class="sw-note sw-default-hide" id="sw-login-info">
 		<ul>
 			<li><?php _e('If this is not the account you wanted, please navigate to <a target="_blank" href="https://login.sitewit.com">https://login.sitewit.com</a> to log out.') ?></li>
 		</ul>
 	</div>
 
-	<div class="sw-note sw-form-info sw-default-hide">
+	<div class="sw-note sw-default-hide" id="sw-form-info">
 		<ul>
 			<li><?php _e('This form is under secured SSL connection, so your information is safe with us.') ?></li>
 		</ul>
@@ -40,6 +40,7 @@
 	var swHost = "<?php echo SW_HOST; ?>";  // The host to send the message to. Should be https://login.sitewit.com.
 	var swFrame = jQuery("#sw-frame");
 	var linkButton = jQuery("#link-account-btn");
+	var header = jQuery("#sw-config-page").find("h2");
 
 	function sameOrigin(host1, host2) {
 		// Generalize the domain, removing trailing slash(es)
@@ -67,13 +68,20 @@
 					jQuery(".sw-note").hide();
 
 					if (item.wName !== "link-account") {
-						jQuery(".sw-form-info").show();
+						// Login page
+						header.text("<?php _e('Link to your SiteWit account'); ?>")
+						jQuery("#sw-form-info").show();
 					} else {
-						jQuery(".sw-login-info").show();
+						jQuery("#sw-login-info").show();
+
+						// Enable the link account button
+						linkButton.removeAttr("disabled");
 					}
 
 					if (item.wName === "new-account") {
-						jQuery(".sw-signup-info").show();
+						// Sign-up page
+						header.text("<?php _e('Get your SiteWit account'); ?>");
+						jQuery("#sw-signup-info").show();
 					}
 
 					break;
@@ -81,7 +89,7 @@
 				case "tk": // tokens
 					if (item.apiToken !== "" && item.userToken !== "") {
 						// Show the link button
-						jQuery(".sw-link-account").show();
+						jQuery("#sw-link-account").show();
 
 						// Only one master account for this user, link account right away
 						if (item.numAcct === 1) {

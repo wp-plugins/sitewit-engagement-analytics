@@ -3,8 +3,8 @@ Contributors: sitewit
 Donate link:
 Tags: advertising, online advertising, online  marketing, SEM, SEO, search engine marketing, search engine optimization, PPC marketing, analytics, website analytics, website metrics
 Requires at least: 3.8
-Tested up to: 4.2
-Stable tag: 2.0.6
+Tested up to: 4.3
+Stable tag: 2.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -64,8 +64,12 @@ No. You can use our engagement metrics without the need of a paid search campaig
 
 == Changelog ==
 
+= 2.1.0 =
+* Nothing too special. We just make the plugin capable of binding the installation with an Affiliate
+* Fix detection of HTTPS site to include the right tracking script
+
 = 2.0.6 =
-* Rename the plugin (only the display name)
+* A shorter name for the plugin
 
 = 2.0.5 =
 * Have a nice touch to force reload the page for resetting account

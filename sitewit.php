@@ -4,7 +4,7 @@
 Plugin Name: Search Engine Marketing
 Plugin URI: http://www.sitewit.com
 Description: SiteWit is a DIY online marketing platform. Start with FREE website analytics and SEO keyword ranking.
-Version: 2.0.6
+Version: 2.1.0
 Author: SiteWit
 Author URI: http://www.sitewit.com
 Text Domain: sitewit-engagement-analytics
@@ -15,7 +15,9 @@ License: GPLv2 or later
 // This plugin use PHP 5.3 features, so need to exit right away if the PHP version of the host is < 5.3
 define( 'SW_PHP_MIN_VERSION', '5.3.0' );
 if ( version_compare( PHP_VERSION, SW_PHP_MIN_VERSION, '<' ) ) {
-	exit( 'This plugin requires PHP version 5.3 and later! Version 5.4.0 and over is recommended as 5.3 also reached EOL on 14 Aug 2014.' );
+	if ( is_admin() ) {
+		exit( 'You are using PHP version ' . PHP_VERSION . '. This plugin requires PHP version 5.3 and later!' );
+	}
 }
 
 defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
@@ -36,8 +38,7 @@ define( 'SW_OPTION_NAME_API_TOKEN', 'sw_api_token' );
 define( 'SW_OPTION_NAME_USER_TOKEN', 'sw_user_token' );
 define( 'SW_OPTION_NAME_TRACKING_SCRIPT', 'sw_tracking_script' );
 define( 'SW_OPTION_NAME_MASTER_ACCOUNT', 'sw_master_account' );
-
-define( 'SW_AFFILIATE_ID', '' );    // The affiliate is empty but this is needed for API access
+define( 'SW_OPTION_NAME_AFFILIATE_ID', 'sw_affiliate_id' );
 
 // Support for internationalization
 load_plugin_textdomain( SW_TEXT_DOMAIN, false, basename( dirname( __FILE__ ) ) . '/languages' );
@@ -59,6 +60,12 @@ function activation_check() {
 		{
 			sw_deactivate_plugin( __('This site seems to already have tracking code injected by cPanel. Please go to cPanel for SiteWit Reports.', SW_TEXT_DOMAIN) );
 		}
+	}
+
+	if ( file_exists( SW_PLUGIN_DIR . 'affiliate.php' ) ) {
+		$sw_affiliate_id = '';
+		include SW_PLUGIN_DIR . 'affiliate.php';
+		update_option( SW_OPTION_NAME_AFFILIATE_ID, $sw_affiliate_id );
 	}
 }
 

@@ -88,9 +88,12 @@ TRACKINGCODE;
 			$inc->view( 'settings' );
 		} else {
 			$current_user = wp_get_current_user();
+			$sw_affiliate_id = get_option( SW_OPTION_NAME_AFFILIATE_ID );
+			if ( false === $sw_affiliate_id) $sw_affiliate_id = '';
 
 			$args = array(
-				'sw_signup_url' => SW_HOST . 'auth/newaccount-wp.aspx?aff='
+				'sw_signup_url' => SW_HOST . 'auth/newaccount-wp.aspx?'
+													. 'aff=' . urlencode(strtolower($sw_affiliate_id))
 													. '&u=' . urlencode(home_url())                     // site url
 													. '&n=' . urlencode($current_user->display_name)    // name
 													. '&e=' . urlencode($current_user->user_email),     // email
@@ -146,7 +149,7 @@ TRACKINGCODE;
 					$tracking_script =
 <<<"TRACKINGSCRIPT"
 	<script type="text/javascript">
-		var scheme = ( "https" === document.location.protocol ) ? "https://" : "http://";
+		var scheme = ( "https:" === document.location.protocol ) ? "https://" : "http://";
 		document.write(decodeURI("%3Cscript src='" + scheme + "analytics.sitewit.com/v3/{$account_info->accountNumber}/sw.js' type='text/javascript'%3E%3C/script%3E"));
 	</script>
 TRACKINGSCRIPT;
