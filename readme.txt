@@ -17,7 +17,7 @@ SiteWit uses unique technology to get your website found on Google, Bing, and Ya
 https://vimeo.com/86135579
 
 = Paid Search Campaigns =
-We’ll help you build a paid search campaign in four simple steps to get your business easily found on Google, Bing, and Yahoo. Set up your marketing campaign and go live in just 5 minutes.
+We'll help you build a paid search campaign in four simple steps to get your business easily found on Google, Bing, and Yahoo. Set up your marketing campaign and go live in just 5 minutes.
 
 = Free Website Analytics =
 Our website analytics offer very unique user engagement data to help you dig a little deeper into your website visitors. Our engagement analytics score the quality of users that come to your website and then uses that score to fuel our optimization and bidding engine to get better results.
