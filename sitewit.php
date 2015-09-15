@@ -4,7 +4,7 @@
 Plugin Name: Search Engine Marketing
 Plugin URI: http://www.sitewit.com
 Description: SiteWit is a DIY online marketing platform. Start with FREE website analytics and SEO keyword ranking.
-Version: 2.1.0
+Version: 2.1.1
 Author: SiteWit
 Author URI: http://www.sitewit.com
 Text Domain: sitewit-engagement-analytics
@@ -22,6 +22,7 @@ if ( version_compare( PHP_VERSION, SW_PHP_MIN_VERSION, '<' ) ) {
 
 defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 
+define( 'SW_PLUGIN_SCHEMA_VERSION', '2' );
 define( 'SW_PLUGIN_FILE', __FILE__ );
 define( 'SW_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'SW_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
@@ -39,6 +40,7 @@ define( 'SW_OPTION_NAME_USER_TOKEN', 'sw_user_token' );
 define( 'SW_OPTION_NAME_TRACKING_SCRIPT', 'sw_tracking_script' );
 define( 'SW_OPTION_NAME_MASTER_ACCOUNT', 'sw_master_account' );
 define( 'SW_OPTION_NAME_AFFILIATE_ID', 'sw_affiliate_id' );
+define( 'SW_OPTION_NAME_SCHEMA_VERSION', 'sw_schema_version' );
 
 // Support for internationalization
 load_plugin_textdomain( SW_TEXT_DOMAIN, false, basename( dirname( __FILE__ ) ) . '/languages' );

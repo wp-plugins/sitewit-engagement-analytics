@@ -1,19 +1,39 @@
 === Search Engine Marketing ===
 Contributors: sitewit
 Donate link:
-Tags: advertising, online advertising, online  marketing, SEM, SEO, search engine marketing, search engine optimization, PPC marketing, analytics, website analytics, website metrics
+Tags: AdWords, Google, Bing, Marketing, Plugin, Advertising, Analytics, Online Advertising, Online Marketing, Search Engine, PPC, PPC Marketing, Search Engine Marketing, Search Engine Optimization, SEM, SEO, Website Analytics, Website Metrics, Metrics, Leads, Prospects, Widget
 Requires at least: 3.8
 Tested up to: 4.3
-Stable tag: 2.1.0
+Stable tag: 2.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-SiteWit is a DIY online marketing platform for SMBs. Get free analytics for your website and launch/optimize search campaigns on Google and Bing.
-
+Market your website on Google, Bing, and Yahoo in 5 minutes to drive customers to your site.
 
 == Description ==
 
-SiteWit is a DIY online marketing platform. Start with FREE website analytics and SEO keyword ranking. Then utilize SiteWit's step by step set up to launch search campaigns across Google, Bing and Yahoo. Maximize your search budgets and advertise online with confidence by leveraging SiteWit's automated management and optimization tools.
+SiteWit uses unique technology to get your website found on Google, Bing, and Yahoo by helping you build a paid search campaign in a few simple steps. Our software puts your marketing on autopilot by actively optimizing your search campaign on a daily basis. We make it easy for you to understand your website visitors and boost your online presence with our free next-generation website analytics.
+
+https://vimeo.com/86135579
+
+= Paid Search Campaigns =
+We’ll help you build a paid search campaign in four simple steps to get your business easily found on Google, Bing, and Yahoo. Set up your marketing campaign and go live in just 5 minutes.
+
+= Free Website Analytics =
+Our website analytics offer very unique user engagement data to help you dig a little deeper into your website visitors. Our engagement analytics score the quality of users that come to your website and then uses that score to fuel our optimization and bidding engine to get better results.
+
+= Automation and Optimization =
+Our unique optimization engine looks at how users engage with your website and then uses that data to run almost 100,000 mathematical solutions for your marketing campaigns. This ensures that your online marketing budget will be used effectively to target customers who have a higher chance to purchase a product or service on your website. This type of optimization is impossible to do by hand!
+
+= Quality Traffic =
+We help you choose the right keywords and ads for your business to drive more qualified customers to your site. Our engagement analytics learn about your website visitors and fuel the optimization engine to ensure you get in front of potential customers who are searching for your products or services in search engines.
+
+Find out more at http://www.sitewit.com
+
+Follow us on:
+* Twitter - https://twitter.com/SiteWit
+* Facebook - https://www.facebook.com/SiteWit
+* LinkedIn - https://www.linkedin.com/company/sitewit
 
 
 == Installation ==
@@ -38,22 +58,23 @@ SiteWit is a DIY online marketing platform. Start with FREE website analytics an
 
 == Frequently Asked Questions ==
 
-= Is SiteWit truly free? =
+= How does Sitewit SMB work? =
+Sitewit SMB will automatically generate a campaign for your website and display it on Google, Bing and Yahoo. The number of search engines depends on the amount of ad spend you allocate to your campaign. To sign up, all you have to do is go through our signup process that takes less than 5 minutes. After that is done, we take care of the rest and will continually update you on the status of your campaign.
 
+= Is SiteWit truly free? =
 Yes. You can install our engagement metrics and begin seeing the results at no cost. You only pay if you wish to see more in-depth reports.
 
 = Is SiteWit easy to install? =
-
 Yes. Our plugin makes it just that!
 
-= Are SiteWit engagement metrics truly unique? =
+= Do I need to have any experience with pay per click to use Sitewit SMB? =
+Not at all. We have designed Sitewit SMB for people that have no idea how online marketing through pay per click works. We take care of all the technical stuff while you sit back watch as the customers roll into your website.
 
+= Are SiteWit engagement metrics truly unique? =
 Yes. We have built our engagement Metrics from the ground up, using our own patent-pending analytics engine as the foundation. There are no other metrics out there like ours.
 
 = Do I need to buy a paid search campaign? =
-
 No. You can use our engagement metrics without the need of a paid search campaign. That being said, engagement metrics work best when used to optimize your PPC campaigns.
-
 
 == Screenshots ==
 
@@ -63,6 +84,9 @@ No. You can use our engagement metrics without the need of a paid search campaig
 
 
 == Changelog ==
+
+= 2.1.1 =
+* Really fix the detection of HTTPS site to include the right tracking script
 
 = 2.1.0 =
 * Nothing too special. We just make the plugin capable of binding the installation with an Affiliate

@@ -23,6 +23,9 @@ class SW_Plugin
 	 *   + Print the tracking code onto the footer
 	 */
 	public function init_hooks() {
+		// Check if plugin's schema needs update
+		add_action( 'admin_init', array( $this, 'update_schema' ) );
+
 		// Add a settings menu to settings/config page of the plugin
 		add_action( 'admin_menu', function() {
 			// The last argument is the class + function where the page will be rendered
@@ -190,5 +193,27 @@ TRACKINGSCRIPT;
 		echo json_encode( array( 'success' => true ) );
 
 		wp_die();
+	}
+
+	public function update_schema() {
+		if ( ! is_admin() || ! defined( 'SW_PLUGIN_SCHEMA_VERSION' ) ) return;
+
+		// Get current schema version. Default to 1. We didn't have this before.
+		$current_schema_version = get_option( SW_OPTION_NAME_SCHEMA_VERSION, '1' );
+
+		if ( version_compare( $current_schema_version, SW_PLUGIN_SCHEMA_VERSION, '<' )) {
+			$updater = new SW_Updater();
+
+			for ( $v = $current_schema_version; $v < SW_PLUGIN_SCHEMA_VERSION; $v++ ) {
+				// Check if the updater function exists. In any loop, if it's not, break immediately!
+				$method_name = "UpdateFrom{$v}To" . SW_PLUGIN_SCHEMA_VERSION;
+				if ( ! method_exists( $updater, $method_name ) ) break;
+
+				if ( $updater->{$method_name}() ) {
+					// Update the current schema to the latest (code) version
+					update_option( SW_OPTION_NAME_SCHEMA_VERSION, $v + 1 );
+				}
+			}
+		}
 	}
 }

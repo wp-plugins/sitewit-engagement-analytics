@@ -26,4 +26,5 @@ return array(
     'Sitewit\\WpPlugin\\SW_Api' => $baseDir . '/class/class-sw-api.php',
     'Sitewit\\WpPlugin\\SW_Logger' => $baseDir . '/class/class-sw-logger.php',
     'Sitewit\\WpPlugin\\SW_Plugin' => $baseDir . '/class/class-sw-plugin.php',
+    'Sitewit\\WpPlugin\\SW_Updater' => $baseDir . '/class/class-sw-updater.php',
 );
