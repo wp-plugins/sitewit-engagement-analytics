@@ -4,7 +4,7 @@
 Plugin Name: Search Engine Marketing
 Plugin URI: http://www.sitewit.com
 Description: SiteWit is a DIY online marketing platform. Start with FREE website analytics and SEO keyword ranking.
-Version: 2.1.1
+Version: 2.1.2
 Author: SiteWit
 Author URI: http://www.sitewit.com
 Text Domain: sitewit-engagement-analytics

@@ -30,7 +30,9 @@ class SW_Plugin
 		add_action( 'admin_menu', function() {
 			// The last argument is the class + function where the page will be rendered
 			// The class must be declared as full namespaced as it's under 2 closure
-			add_options_page( __('SiteWit Configuration', SW_TEXT_DOMAIN), __('SiteWit', SW_TEXT_DOMAIN),
+			add_options_page(
+				__('Search Engine Marketing', SW_TEXT_DOMAIN),	// Page title
+				__('Search Engine Marketing', SW_TEXT_DOMAIN),	// Menu title
 				'manage_options', SW_SETTING_PAGE, array( '\Sitewit\WpPlugin\SW_Plugin', 'config_page' ) );
 		} );
 
@@ -40,11 +42,11 @@ class SW_Plugin
 		}
 
 		// Tell user to continue linking SiteWit account
-		if ( ( sw_no_token() || sw_no_tracking_code() ) && sw_is_setting_page() ) {
+		if ( sw_no_token() || sw_no_tracking_code() ) {
 			// Show notice
 			add_action( 'admin_notices', function() {
 				echo Messages::add_warning(
-					__('<strong>SiteWit is almost ready.</strong> You must <a href="%s">link your SiteWit account</a> in order for it to work.'),
+					__('<strong>Search Engine Marketing plugin is almost ready.</strong> You must <a href="%s">link your SiteWit account</a> in order for it to work.'),
 					sw_get_setting_page_link()
 				);
 			} );
@@ -57,7 +59,7 @@ class SW_Plugin
 		}
 
 		// Add tracking code to front-end footer if available
-		if ( ( $tracking_script = get_option( SW_OPTION_NAME_TRACKING_SCRIPT ) ) !== false ) {
+		if ( ( $tracking_script = sw_get_tracking_code() ) !== false ) {
 			// This JS code containing a function call should be placed before the actual "sw.js" file call.
 			add_action( 'wp_footer', function() {
 				echo
@@ -86,10 +88,7 @@ TRACKINGCODE;
 		$inc = \Sitewit\WpPlugin\SW_Plugin::get_instance();
 
 		// Include the correct view files
-		if ( false !== get_option( SW_OPTION_NAME_API_TOKEN ) && false !== get_option( SW_OPTION_NAME_USER_TOKEN ) ) {
-			// Has the tokens, so show the Settings page
-			$inc->view( 'settings' );
-		} else {
+		if ( sw_no_token() || sw_no_tracking_code() ) {
 			$current_user = wp_get_current_user();
 			$sw_affiliate_id = get_option( SW_OPTION_NAME_AFFILIATE_ID );
 			if ( false === $sw_affiliate_id) $sw_affiliate_id = '';
@@ -104,6 +103,9 @@ TRACKINGCODE;
  			);
 
 			$inc->view( 'config', $args );
+		} else {
+			// Has the tokens, so show the Settings page
+			$inc->view( 'settings' );
 		}
 	}
 

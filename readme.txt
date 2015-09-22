@@ -4,7 +4,7 @@ Donate link:
 Tags: AdWords, Google, Bing, Marketing, Plugin, Advertising, Analytics, Online Advertising, Online Marketing, Search Engine, PPC, PPC Marketing, Search Engine Marketing, Search Engine Optimization, SEM, SEO, Website Analytics, Website Metrics, Metrics, Leads, Prospects, Widget
 Requires at least: 3.8
 Tested up to: 4.3
-Stable tag: 2.1.1
+Stable tag: 2.1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -85,6 +85,10 @@ No. You can use our engagement metrics without the need of a paid search campaig
 
 
 == Changelog ==
+
+= 2.1.2 =
+* Get the notice message to always show so user will know to continue setting up the plugin
+* Rename a few things
 
 = 2.1.1 =
 * Really fix the detection of HTTPS site to include the right tracking script

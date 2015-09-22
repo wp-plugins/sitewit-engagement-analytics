@@ -7,11 +7,17 @@ function sw_deactivate_plugin( $message ) {
 }
 
 function sw_no_token() {
-	return false === get_option( SW_OPTION_NAME_API_TOKEN ) || false === get_option( SW_OPTION_NAME_USER_TOKEN );
+	return ! get_option( SW_OPTION_NAME_API_TOKEN ) || ! get_option( SW_OPTION_NAME_USER_TOKEN );
 }
 
 function sw_no_tracking_code() {
-	return false === get_option( SW_OPTION_NAME_TRACKING_SCRIPT );
+	return ! get_option( SW_OPTION_NAME_TRACKING_SCRIPT );
+}
+
+function sw_get_tracking_code() {
+    $code = get_option( SW_OPTION_NAME_TRACKING_SCRIPT );
+
+    return ( ! $code ) ? false : $code;
 }
 
 function sw_is_setting_page() {
