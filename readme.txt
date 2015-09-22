@@ -79,7 +79,7 @@ No. You can use our engagement metrics without the need of a paid search campaig
 
 == Screenshots ==
 
-1. Activate the plugin and look for SiteWit sub-menu in the Settings section of your WordPress admin.
+1. Activate the plugin and look for Search Engine Marketing sub-menu in the Settings section of your WordPress admin.
 2. You can create a new account or log in with an existing account, then link your WordPress site.
 3. Plugin Dashboard allows you to quickly navigate to different types of reports for your website.
 
